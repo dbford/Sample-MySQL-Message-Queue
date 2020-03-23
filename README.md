@@ -1,13 +1,13 @@
 ## Table of contents
-* [Table of contents] (#table-of-contents)
+* [Table of contents](#table-of-contents)
 * Project
-  * [Description] (#project)
-  * [Requirements] (#requirements)
-  * [Features] (#feature-set)
-  * [Performance] (#performance)
-* [Development Notes] (#development-notes)
-* [File Structure] (#important-files)
-* [Setup / Run] (#setup-/-running)
+  * [Description](#project)
+  * [Requirements](#requirements)
+  * [Features](#feature-set)
+  * [Performance](#performance)
+* [Development Notes](#development-notes)
+* [File Structure](#important-files)
+* [Setup / Run](#setup--running)
 
 
 ## Project
