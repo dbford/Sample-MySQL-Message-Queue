@@ -54,8 +54,7 @@ Also, as I do not yet know Closure, the Java language was used.
 | Message.java | Java POJO that holds a single msg_queue record |
 | MessageQueue.java | Java translation of the specified closure API |
 | MySqlMessageQueue.java | Actual MessageQueue implementation |
-| MySqlMessageQueueTest.java | Unit tests for the message queue. There are also some unit tests in this file for generating
-test data and measuring throughput | 
+| MySqlMessageQueueTest.java | Unit tests for the message queue. There are also some unit tests in this file for generating test data and measuring throughput | 
 
 
 ## Setup / Running
@@ -65,17 +64,17 @@ schema name to be used in the MySQL server.
 Steps:
 1. Have access to an external MySQL server.
 1. Create a user account that the application will use to access the server.
-1. Run the table creation script (located at <todo>)
+1. Run the table creation script (located at `todo`)
 1. Grant the previously created user access to the table.
     ```mysql
     grant all privileges on s71.msg_queue to 's71'@'%';
     flush privileges;
     ```
-1. Put the JDBC connection string, containing the db url, user, and pass, into the mysql.properties file <todo>
+1. Put the JDBC connection string, containing the db url, user, and pass, into the mysql.properties file `todo`
    ```properties
    connectionString=jdbc:mysql://localhost:3306?user=s71&password=s71_USER_%21%40%23%24\
    ```
 1. Run the example
    ```
    mvn clean install
-```
+   ```
