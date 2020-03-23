@@ -278,7 +278,7 @@ public class MySqlMessageQueueTest {
     }
 
     @Test
-//    @Ignore //use this if you want to generate a large amount of test data
+    @Ignore //use this if you want to generate a large amount of test data
     public void generateMessages() throws Exception {
 
         List<Message> batch = new ArrayList<>(10_000);
