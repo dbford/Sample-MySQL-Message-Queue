@@ -72,9 +72,10 @@ Steps:
     ```
 1. Put the JDBC connection string, containing the db url, user, and pass, into the mysql.properties file `todo`
    ```properties
-   connectionString=jdbc:mysql://localhost:3306?user=s71&password=s71_USER_%21%40%23%24\
+   connectionString=jdbc:mysql://localhost:3306?user=s71&password=s71_USER_%21%40%23%24
    ```
 1. Run the example
    ```
    mvn clean install
    ```
+1. Consider enabling and running the `generateMessages()` and `testThroughput()` methods in the `MySqlMessageQueueTest.java` file.
