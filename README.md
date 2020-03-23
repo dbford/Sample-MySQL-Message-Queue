@@ -47,6 +47,8 @@ experience.
 
 Also, as I do not yet know Closure, the Java language was used.
 
+Lastly, as an implementation detail, messages are not deleted from the database after they've been `CONFIRMED`. Instead, a new API, `queue.deleteMessageOlderThan(Instant)` has been added to handle this situation. This was done so that messages and be audited for a period of time before disappearing forever.
+
 ## Important files
 | File | Description |
 | ---- | ----------- |
